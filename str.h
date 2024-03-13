@@ -1,5 +1,4 @@
 #include <iostream>
-//#include "memtrace.h"
 
 class str{
 private:
@@ -7,7 +6,10 @@ private:
   size_t len;
 
 public:
-  str(): text(NULL), len(0){}
+  str(): len(0) {
+    text = new char[1];
+    text[0] = '\0';
+  }
 
   str(const char* t);
 

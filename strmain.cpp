@@ -1,5 +1,4 @@
 #include <iostream>
-//#include "memtrace.h"
 #include "str.h"
 
 int main(){
@@ -10,8 +9,8 @@ int main(){
 
   str hello, world;
   hello += "hello";
-  //std::cout << hello << std::endl;
+  std::cout << hello << std::endl;
 
-  //world = "world";
-  //std::cout << hello + world << std::endl;
+  world = " world";
+  std::cout << hello + world << std::endl;
 }
